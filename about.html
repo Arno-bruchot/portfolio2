@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>À propos - Arno BRUCHOT</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<video autoplay muted loop id="background-video">
-  <source src="background.mp4" type="video/mp4">
-  Ton navigateur ne supporte pas les vidéos en arrière-plan.
-</video>
-<div class="overlay"></div>
+  <video autoplay muted loop id="background-video">
+    <source src="background.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+  <div class="overlay"></div>
 
   <header>
     <div class="logo">Arno BRUCHOT</div>
@@ -30,110 +29,73 @@
   </header>
 
   <main>
-    <section id="about">
-      <h2>👤 À propos</h2>
-      <br>
-      <h2>🏫 Pour commencer : mon parcours scolaire</h2>
+    <section class="intro">
+      <h1>En quelques mots</h1>
+      <p>Je suis Arno BRUCHOT, passionné par les réseaux, le développement, et les systèmes. Actuellement en BTS SIO option SISR.</p>
+    </section>
 
+    <section class="timeline-section">
+      <h2>Mon parcours scolaire</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>BTS SIO Option SISR – Merleau Ponty (Rochefort - 17)</h3>
-            <p>Option : Maths approfondies</p>
-            <p>2024 - En cours</p>
-          </div>
+        <div class="event">
+          <h3>BTS SIO SISR - Merleau Ponty</h3>
+          <span>2024 - En cours</span>
+          <p>Option Maths approfondies</p>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Bac général - Lycée les Iris (Lormont - 33)</h3>
-            <p>Option : Mathématiques - NSI (Numérique et Sciences de l'Informatique)</p>
-            <p>2023 - 2024</p>
-          </div>
+        <div class="event">
+          <h3>Bac Général - Lycée les Iris</h3>
+          <span>2023 - 2024</span>
+          <p>Mathématiques & NSI</p>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Brevet des collèges - Collège Max Linder (Saint-Loubès - 33)</h3>
-            <p>Mention : Bien</p>
-            <p>2020 - 2021</p>
-          </div>
+        <div class="event">
+          <h3>Brevet - Collège Max Linder</h3>
+          <span>2020 - 2021</span>
+          <p>Mention Bien</p>
         </div>
       </div>
+    </section>
 
-      <br><br>
-      <h2>🏅 Mes certifications</h2>
-      <div class="certifications-container">
-        <div class="certif-card">
-          <h3>Introduction à la cybersécurité</h3>
-          <p>Notions fondamentales de la cybersécurité et bonnes pratiques de protection.</p>
-          <img src="images/cyber.png" alt="Introduction à la cybersécurité">
+    <section class="certifications">
+      <h2>Mes certifications</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/cyber.png" alt="Cybersécurité">
+          <h3>Cybersécurité</h3>
+          <p>Fondamentaux et bonnes pratiques</p>
         </div>
-
-        <div class="certif-card">
-          <h3>Introduction to Modern AI</h3>
-          <p>Principes de l’intelligence artificielle moderne et ses domaines d’application.</p>
-          <img src="images/IA.png" alt="Introduction to Modern AI">
+        <div class="card">
+          <img src="images/IA.png" alt="IA">
+          <h3>Modern AI</h3>
+          <p>Introduction à l'intelligence artificielle</p>
         </div>
-
-        <div class="certif-card">
-          <h3>Numérique Responsable</h3>
-          <p>Comprendre l’impact environnemental du numérique et adopter des usages durables.</p>
+        <div class="card">
           <img src="images/numerique.png" alt="Numérique Responsable">
+          <h3>Numérique Responsable</h3>
+          <p>Usages durables et impact éco</p>
         </div>
       </div>
+    </section>
 
-      <br> <br> <br>
-  <h2>👨‍💻 Mes Compétences développement</h2>
-<div class="bulles">
-  <div class="bulle1 bulle">
-    <i class="fab fa-html5"></i>
-    <span>HTML5</span>
-  </div>
-  <div class="bulle2 bulle">
-    <i class="fab fa-css3-alt"></i>
-    <span>CSS3</span>
-  </div>
-  <div class="bulle4 bulle">
-    <i class="fab fa-linux"></i>
-    <span>Linux</span>
-  </div>
-  <div class="bulle5 bulle">
-    <i class="fas fa-database"></i>
-    <span>SQL</span>
-  </div>
-  <div class="bulle6 bulle">
-    <i class="fab fa-python"></i>
-    <span>Python</span>
-  </div>
-</div>
-      <br> <br> <br>
-          <h2>⚙️Mes outils / logiciel </h2>
-      <div class="bulles">
-         <div class="bulle7 bulle">
-    <i class="devicon-mysql-plain colored"></i>
-    <span>MySQL</span>
-  </div>
-        <div class="bulle8 bulle">
-  <i class="devicon-photoshop-plain colored"></i>
-  <span>Photoshop</span>
-</div>
+    <section class="skills">
+      <h2>Compétences Techniques</h2>
+      <div class="skills-grid">
+        <div><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div><i class="fab fa-linux"></i><span>Linux</span></div>
+        <div><i class="fas fa-database"></i><span>SQL</span></div>
+        <div><i class="fab fa-python"></i><span>Python</span></div>
+      </div>
+    </section>
 
-<div class="bulle9 bulle">
-  <i class="devicon-vscode-plain colored"></i>
-  <span>VS Code</span>
-</div>
-
-<div class="bulle10 bulle">
-  <i class="fab fa-github"></i>
-  <span>GitHub</span>
-</div>
-        </div>
+    <section class="tools">
+      <h2>Outils et logiciels</h2>
+      <div class="skills-grid">
+        <div><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+        <div><i class="devicon-photoshop-plain"></i><span>Photoshop</span></div>
+        <div><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+        <div><i class="fab fa-github"></i><span>GitHub</span></div>
+      </div>
     </section>
   </main>
-
 </body>
 </html>
