@@ -1,73 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Arno BRUCHOT</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Portfolio Arno Bruchot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="background.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
   <header>
-    <div class="logo">Arno BRUCHOT</div>
+    <div class="logo">Arno Bruchot</div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="about.html">À propos</a></li>
         <li><a href="stage.html">Stage</a></li>
-      
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tonprofil" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </header>
+
   <main>
-<section id="contact">
-  <div class="contact-container">
-    <!-- Partie gauche : formulaire -->
-    <div class="contact-form-wrapper">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/xdkzpwao" method="POST" class="contact-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom" required />
-          </div>
-          <div class="form-group">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Adresse e-mail</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
+    <section id="contact">
+      <h1>Contactez-moi</h1>
+      <div class="contact-container">
+        <form class="contact-form" action="https://formspree.io/f/mlezbvwd" method="POST">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required placeholder="Votre email" />
+
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+          <textarea id="message" name="message" rows="6" required placeholder="Votre message"></textarea>
+
+          <button type="submit" class="btn-cv">Envoyer</button>
+        </form>
+
+        <div class="contact-infos">
+          <h2>Mes coordonnées</h2>
+          <p><i class="fas fa-map-marker-alt"></i> Bordeaux, France</p>
+          <p><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
+          <p><i class="fas fa-envelope"></i> email@example.com</p>
         </div>
-        <button type="submit" class="btn-submit">Envoyer</button>
-      </form>
-    </div>
-
-    <!-- Partie droite : infos -->
-    <div class="contact-infos">
-      <h2>Me contacter</h2>
-      <p><i class="fas fa-paper-plane"></i>a.bruchot'@'gmail.com</p>
-      <p><i class="fas fa-phone"></i> 07 69 94 00 35</p>
-   <div class="social-icons">
-        <a href="https://www.instagram.com/tonprofil" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/tonprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/tonprofil" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="a.bruchot@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>  
-    
-    </div>
-  </div>
-</section>
-
-
+      </div>
+    </section>
   </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
