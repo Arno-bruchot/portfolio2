@@ -1,102 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stage - Arno BRUCHOT</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage - Portfolio Arno Bruchot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="background.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+
   <header>
-    <div class="logo">Arno BRUCHOT</div>
+    <div class="logo">Arno Bruchot</div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="about.html">À propos</a></li>
         <li><a href="stage.html" class="active">Stage</a></li>
-     
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tonprofil" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </header>
+
   <main>
     <section id="resume-stage">
-  <h2>💼 Mon stage de première année</h2>
-    <p>Mon stage de 1ère année s'est déroulé chez <strong>Dépanordi</strong> à Bordeaux, du 19 mai au 27 juin 2024.</p>
-    <p>J'ai eu l'opportunité de travailler sur divers projets ce qui a fortement renforcé mes compétences en informatique et en réseaux.</p>
-    <br><br><br>
-      <h2>🏢 Présentation de DépanOrdi Bordeaux</h2>
-  <p><strong>DépanOrdi</strong> est une société de services informatiques basée à Bordeaux, active depuis plus de 10 ans. Elle est spécialisée dans :</p><br><br>
+      <h1>Mon stage chez Dépanordi</h1>
+      <p>Durant mon stage de première année en BTS SIO, j'ai travaillé sur plusieurs projets techniques qui m'ont permis de mettre en pratique mes compétences en réseau, maintenance et développement.</p>
       
-      <p class="sub-block">- <strong>La maintenance et le dépannage</strong> pour particuliers et TPE/PME, avec interventions à domicile ou en atelier (diagnostic sous 48 h, prise en charge garantie, SAV jusqu’à 24 h pour les pro).</p>
-     <p class="sub-block">- <strong>La vente et l’installation de matériel</strong> : PC, serveurs, NAS, imprimantes, réseaux et périphériques professionnels.</p>
-      <p class="sub-block">- <strong>L’audit, l’infogérance et la protection des données</strong> : surveillance de parcs informatiques, récupération de données (y compris en salle blanche), et mise en place de solutions de sauvegarde sécurisées.</p>
-     <p class="sub-block">- <strong>L’intégration de serveurs/NAS et réseaux</strong> : câblage, baie réseau, configuration, solutions RAID et serveurs virtualisés (physiques ou NAS).</p>
-      
-      <br><br><br>
-  <p>L’entreprise se distingue par des <em>prestations rapides et adaptables</em> : aide aux particuliers dans les 48 h, pour les professionnels sous 24 h, ainsi qu’un audit initial gratuit pour optimiser les infrastructures. DépanOrdi propose également des contrats d’assistance annuels, déductibles à 50 % de l’impôt, et est partenaire de plusieurs éditeurs (Microsoft, Kaspersky, etc.)</p>
-      <br><br>
-  <h3>🕒 Mes horaires :</h3>
-     <p>Durant ce stage mes horaires étaient :</p>
-      <p>Du Lundi au Vendredi de <strong>9h à 17h.</strong></p>
-      <br><br><br>
-      
-      <h2>📋 Résumé hebdomadaire du stage</h2>
-  <article class="semaine">
-    <h3>Semaine 1</h3>
-    <ul>
-      <li>Réparations matérielles : remplacement de batterie, connecteurs, pâte thermique, ventilateurs.</li>
-      <li>Découverte et utilisation d'outils de diagnostic (OCCT, CrystalDisk, MemTest, etc.).</li>
-      <li>Utilisation de machines virtuelles pour la gestion téléphonie, tickets, support à distance.</li>
-      <li>Premiers développements web et formations internes sur le réseau.</li>
-      <li>Interventions chez clients particuliers pour sauvegardes et diagnostics divers.</li>
-    </ul>
-  </article>
+      <div class="semaine">
+        <h2>Semaine 1</h2>
+        <ul>
+          <li>Installation et configuration de postes informatiques</li>
+          <li>Migration de données et paramétrage des nouveaux systèmes</li>
+          <li>Installation d'un logiciel de gestion à distance (RMM)</li>
+        </ul>
+      </div>
 
-  <article class="semaine">
-    <h3>Semaine 2</h3>
-    <ul>
-      <li>Maintenance PC : remplacements matériels, dépannage clavier, diagnostics complexes.</li>
-      <li>Configuration de tablettes Android pour clients professionnels.</li>
-      <li>Réalisation de schémas réseaux et interventions sur imprimantes.</li>
-      <li>Utilisation d’outils de planification de sauvegarde et gestion des droits utilisateurs.</li>
-      <li>Premières installations serveur avec OpenMediaVault et découverte du RAID BTRFS.</li>
-    </ul>
-  </article>
+      <div class="semaine">
+        <h2>Semaine 2</h2>
+        <ul>
+          <li>Interventions matérielles (réparation, maintenance)</li>
+          <li>Gestion des imprimantes et réseaux associés</li>
+          <li>Documentation technique</li>
+        </ul>
+      </div>
 
-  <article class="semaine">
-    <h3>Semaine 3</h3>
-    <ul>
-      <li>Nombreuses interventions clients : cabinets, commerces, bureaux (Wi-Fi, imprimantes, NAS).</li>
-      <li>Configuration avancée d’un NAS avec services Docker (Nextcloud, Calibre, Jellyfin, etc.).</li>
-      <li>Identification et résolution d’attaques réseau (ARP Spoofing, duplication IP).</li>
-      <li>Maintenance logicielle : création comptes utilisateurs, désinfection scareware, MAJ système.</li>
-    </ul>
-  </article>
+      <div class="semaine">
+        <h2>Semaine 3</h2>
+        <ul>
+          <li>Déploiement de serveurs NAS avec OpenMediaVault</li>
+          <li>Configuration de conteneurs Docker</li>
+          <li>Participation à la sécurité réseau</li>
+        </ul>
+      </div>
 
-  <article class="semaine">
-    <h3>Semaine 4</h3>
-    <ul>
-      <li>Reconfiguration complète de réseaux : box, routeurs, points d'accès Wi-Fi, pare-feux Synology.</li>
-      <li>Réinstallation propre de Docker & conteneurs (Nextcloud, Jellyfin, Calibre Web).</li>
-      <li>Diagnostic d’imprimantes, onduleurs, et désinfection de machines compromises.</li>
-      <li>Interventions sur OS Linux, dépannage réseau client, configuration de NAS Synology complet.</li>
-    </ul>
-  </article>
+      <div class="semaine">
+        <h2>Semaine 4</h2>
+        <ul>
+          <li>Développement web : création de pages HTML/CSS pour la communication interne</li>
+          <li>Gestion de la présence en ligne de l'entreprise</li>
+        </ul>
+      </div>
 
-  <article class="semaine">
-    <h3>Semaine 5</h3>
-    <ul>
-      <li>Clonage de SSD, récupération de données sur disques anciens, désinfection approfondie de scareware.</li>
-      <li>Support sur Manjaro Linux, configuration de comptes locaux Windows et transfert de sessions.</li>
-      <li>Déblocage de PC sans accès admin via ISO lockpick, NAS endommagés à cause d’orage, reconfigurations complètes.</li>
-      <li>Derniers ajustements : configuration réseau dans des commerces, affichage numérique, backup automatique.</li>
-    </ul>
-  </article>
-</section>
-
+      <div class="semaine">
+        <h2>Semaine 5</h2>
+        <ul>
+          <li>Assistance utilisateur et résolution d'incidents</li>
+          <li>Préparation d'un rapport de stage et bilan</li>
+        </ul>
+      </div>
+    </section>
   </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
