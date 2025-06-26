@@ -3,88 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>À propos - Arno BRUCHOT</title>
-  <link rel="stylesheet" href="about-style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <title>À propos - Portfolio Arno Bruchot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
-  <video autoplay muted loop id="background-video">
-    <source src="background.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas les vidéos en arrière-plan.
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="background.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
   </video>
-  <div class="overlay"></div>
 
   <header>
-    <div class="logo">Arno BRUCHOT</div>
+    <div class="logo">Arno Bruchot</div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a class="active" href="about.html">À propos</a></li>
+        <li><a href="about.html" class="active">À propos</a></li>
         <li><a href="stage.html">Stage</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/tonprofil" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </header>
 
   <main>
-    <section class="fade-in">
-      <h2>👤 À propos</h2>
-      <p>Actuellement étudiant en BTS SIO option SISR, je suis passionné par l’administration réseau, la cybersécurité et le développement d’outils simples mais efficaces.</p>
-    </section>
-
-    <section class="fade-in">
-      <h2>🏫 Mon parcours scolaire</h2>
-      <ul class="timeline">
-        <li><strong>2024 - En cours</strong> : BTS SIO SISR – Merleau Ponty (Rochefort)</li>
-        <li><strong>2023 - 2024</strong> : Bac Général – Mathématiques & NSI – Lycée Les Iris</li>
-        <li><strong>2020 - 2021</strong> : Brevet – Collège Max Linder, mention Bien</li>
+    <section id="about">
+      <h1>À propos de moi</h1>
+      <p>Étudiant en BTS Services Informatiques aux Organisations, spécialité SISR, passionné par les réseaux, la sécurité et le développement web.</p>
+      <p>J'aime apprendre et relever des défis techniques, notamment à travers mes projets personnels et mes stages.</p>
+      <h2>Compétences clés</h2>
+      <ul>
+        <li>Administration réseau & serveurs</li>
+        <li>Développement web : HTML, CSS, JavaScript, Python</li>
+        <li>Virtualisation et gestion de serveurs (VMware, Docker)</li>
+        <li>Sécurité informatique et maintenance</li>
       </ul>
     </section>
-
-    <section class="fade-in">
-      <h2>🏅 Certifications</h2>
-      <div class="certifications">
-        <div class="card">
-          <h3>Cybersécurité</h3>
-          <p>Bonnes pratiques fondamentales</p>
-          <img src="images/cyber.png" alt="Cyber" />
-        </div>
-        <div class="card">
-          <h3>Modern AI</h3>
-          <p>Découverte de l’intelligence artificielle</p>
-          <img src="images/IA.png" alt="IA" />
-        </div>
-        <div class="card">
-          <h3>Numérique Responsable</h3>
-          <p>Impact écologique du numérique</p>
-          <img src="images/numerique.png" alt="Numérique" />
-        </div>
-      </div>
-    </section>
-
-    <section class="fade-in">
-      <h2>💻 Compétences Techniques</h2>
-      <div class="skills">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-linux"></i>
-        <i class="fas fa-database"></i>
-        <i class="fab fa-python"></i>
-      </div>
-    </section>
-
-    <section class="fade-in">
-      <h2>🛠️ Outils / Logiciels</h2>
-      <div class="skills">
-        <i class="devicon-mysql-plain"></i>
-        <i class="devicon-photoshop-plain"></i>
-        <i class="devicon-vscode-plain"></i>
-        <i class="fab fa-github"></i>
-      </div>
-    </section>
   </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
