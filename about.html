@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>À propos - Arno BRUCHOT</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about-style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <video autoplay muted loop id="background-video">
     <source src="background.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo HTML5.
+    Votre navigateur ne supporte pas la vidéo de fond.
   </video>
   <div class="overlay"></div>
 
@@ -29,71 +29,60 @@
   </header>
 
   <main>
-    <section class="intro">
-      <h1>En quelques mots</h1>
-      <p>Je suis Arno BRUCHOT, passionné par les réseaux, le développement, et les systèmes. Actuellement en BTS SIO option SISR.</p>
+    <section class="block">
+      <h2>Parcours Scolaire</h2>
+      <ul class="timeline">
+        <li>
+          <strong>BTS SIO SISR</strong> - Merleau Ponty (2024 - en cours)
+        </li>
+        <li>
+          <strong>Bac Général</strong> - Lycée les Iris (2023 - 2024)
+        </li>
+        <li>
+          <strong>Brevet</strong> - Collège Max Linder (2020 - 2021)
+        </li>
+      </ul>
     </section>
 
-    <section class="timeline-section">
-      <h2>Mon parcours scolaire</h2>
-      <div class="timeline">
-        <div class="event">
-          <h3>BTS SIO SISR - Merleau Ponty</h3>
-          <span>2024 - En cours</span>
-          <p>Option Maths approfondies</p>
-        </div>
-        <div class="event">
-          <h3>Bac Général - Lycée les Iris</h3>
-          <span>2023 - 2024</span>
-          <p>Mathématiques & NSI</p>
-        </div>
-        <div class="event">
-          <h3>Brevet - Collège Max Linder</h3>
-          <span>2020 - 2021</span>
-          <p>Mention Bien</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="certifications">
-      <h2>Mes certifications</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="images/cyber.png" alt="Cybersécurité">
+    <section class="block">
+      <h2>Certifications</h2>
+      <div class="certifs">
+        <div class="certif">
           <h3>Cybersécurité</h3>
-          <p>Fondamentaux et bonnes pratiques</p>
+          <p>Bonnes pratiques fondamentales</p>
+          <img src="images/cyber.png" alt="Cyber">
         </div>
-        <div class="card">
-          <img src="images/IA.png" alt="IA">
-          <h3>Modern AI</h3>
+        <div class="certif">
+          <h3>AI Moderne</h3>
           <p>Introduction à l'intelligence artificielle</p>
+          <img src="images/IA.png" alt="AI">
         </div>
-        <div class="card">
-          <img src="images/numerique.png" alt="Numérique Responsable">
+        <div class="certif">
           <h3>Numérique Responsable</h3>
           <p>Usages durables et impact éco</p>
+          <img src="images/numerique.png" alt="Numérique Responsable">
         </div>
       </div>
     </section>
 
-    <section class="skills">
+    <section class="block">
       <h2>Compétences Techniques</h2>
-      <div class="skills-grid">
-        <div><i class="fab fa-html5"></i><span>HTML5</span></div>
-        <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-        <div><i class="fab fa-linux"></i><span>Linux</span></div>
-        <div><i class="fas fa-database"></i><span>SQL</span></div>
-        <div><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skills">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-linux"></i>
+        <i class="fas fa-database"></i>
+        <i class="fab fa-python"></i>
       </div>
     </section>
 
-    <section class="tools">
-      <h2>Outils et logiciels</h2>
-      <div class="skills-grid">
-        <div><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
-        <div><i class="devicon-photoshop-plain"></i><span>Photoshop</span></div>
-        <div><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
-        <div><i class="fab fa-github"></i><span>GitHub</span></div>
+    <section class="block">
+      <h2>Outils & Logiciels</h2>
+      <div class="skills">
+        <i class="devicon-mysql-plain colored"></i>
+        <i class="devicon-photoshop-plain colored"></i>
+        <i class="devicon-vscode-plain colored"></i>
+        <i class="fab fa-github"></i>
       </div>
     </section>
   </main>
