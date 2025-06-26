@@ -2,17 +2,18 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>À propos - Arno BRUCHOT</title>
   <link rel="stylesheet" href="about-style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <video autoplay muted loop id="background-video">
     <source src="background.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la vidéo de fond.
+    Ton navigateur ne supporte pas les vidéos en arrière-plan.
   </video>
   <div class="overlay"></div>
 
@@ -21,7 +22,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html" class="active">À propos</a></li>
+        <li><a class="active" href="about.html">À propos</a></li>
         <li><a href="stage.html">Stage</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -29,44 +30,43 @@
   </header>
 
   <main>
-    <section class="block">
-      <h2>Parcours Scolaire</h2>
+    <section class="fade-in">
+      <h2>👤 À propos</h2>
+      <p>Actuellement étudiant en BTS SIO option SISR, je suis passionné par l’administration réseau, la cybersécurité et le développement d’outils simples mais efficaces.</p>
+    </section>
+
+    <section class="fade-in">
+      <h2>🏫 Mon parcours scolaire</h2>
       <ul class="timeline">
-        <li>
-          <strong>BTS SIO SISR</strong> - Merleau Ponty (2024 - en cours)
-        </li>
-        <li>
-          <strong>Bac Général</strong> - Lycée les Iris (2023 - 2024)
-        </li>
-        <li>
-          <strong>Brevet</strong> - Collège Max Linder (2020 - 2021)
-        </li>
+        <li><strong>2024 - En cours</strong> : BTS SIO SISR – Merleau Ponty (Rochefort)</li>
+        <li><strong>2023 - 2024</strong> : Bac Général – Mathématiques & NSI – Lycée Les Iris</li>
+        <li><strong>2020 - 2021</strong> : Brevet – Collège Max Linder, mention Bien</li>
       </ul>
     </section>
 
-    <section class="block">
-      <h2>Certifications</h2>
-      <div class="certifs">
-        <div class="certif">
+    <section class="fade-in">
+      <h2>🏅 Certifications</h2>
+      <div class="certifications">
+        <div class="card">
           <h3>Cybersécurité</h3>
           <p>Bonnes pratiques fondamentales</p>
-          <img src="images/cyber.png" alt="Cyber">
+          <img src="images/cyber.png" alt="Cyber" />
         </div>
-        <div class="certif">
-          <h3>AI Moderne</h3>
-          <p>Introduction à l'intelligence artificielle</p>
-          <img src="images/IA.png" alt="AI">
+        <div class="card">
+          <h3>Modern AI</h3>
+          <p>Découverte de l’intelligence artificielle</p>
+          <img src="images/IA.png" alt="IA" />
         </div>
-        <div class="certif">
+        <div class="card">
           <h3>Numérique Responsable</h3>
-          <p>Usages durables et impact éco</p>
-          <img src="images/numerique.png" alt="Numérique Responsable">
+          <p>Impact écologique du numérique</p>
+          <img src="images/numerique.png" alt="Numérique" />
         </div>
       </div>
     </section>
 
-    <section class="block">
-      <h2>Compétences Techniques</h2>
+    <section class="fade-in">
+      <h2>💻 Compétences Techniques</h2>
       <div class="skills">
         <i class="fab fa-html5"></i>
         <i class="fab fa-css3-alt"></i>
@@ -76,12 +76,12 @@
       </div>
     </section>
 
-    <section class="block">
-      <h2>Outils & Logiciels</h2>
+    <section class="fade-in">
+      <h2>🛠️ Outils / Logiciels</h2>
       <div class="skills">
-        <i class="devicon-mysql-plain colored"></i>
-        <i class="devicon-photoshop-plain colored"></i>
-        <i class="devicon-vscode-plain colored"></i>
+        <i class="devicon-mysql-plain"></i>
+        <i class="devicon-photoshop-plain"></i>
+        <i class="devicon-vscode-plain"></i>
         <i class="fab fa-github"></i>
       </div>
     </section>
